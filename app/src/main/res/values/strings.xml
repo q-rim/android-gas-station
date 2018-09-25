@@ -3,6 +3,12 @@
     <string name="tool_bar_extras">Extras</string>
     <string name="create_order">menu order</string>
     <string name="live_help">help</string>
+    <string name="drop_extras">Extras</string>
+    <string name="drop_help_center">Help Center</string>
+    <string name="drop_feedback">Feedback</string>
+    <string name="drop_bug">Report Bug</string>
+    <string name="drop_legal">Legal</string>
+
 
     <string-array name="spinner_list_item_array">
         <item>Extras</item>
