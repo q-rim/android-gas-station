@@ -3,4 +3,13 @@
     <string name="tool_bar_extras">Extras</string>
     <string name="create_order">menu order</string>
     <string name="live_help">help</string>
+
+    <string-array name="spinner_list_item_array">
+        <item>Extras</item>
+        <item>Help Center</item>
+        <item>Feedback</item>
+        <item>Report a Bug</item>
+        <item>Legal</item>
+    </string-array>
+
 </resources>

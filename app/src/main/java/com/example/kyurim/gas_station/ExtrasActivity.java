@@ -21,7 +21,7 @@ public class ExtrasActivity extends AppCompatActivity {
 
     }
 
-//    // Menu
+    // Menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate menu; Add items to AppBar
@@ -33,7 +33,7 @@ public class ExtrasActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_create_order:
+            case R.id.action_create_order_spinner:
                 Log.i(TAG, "Option clicked - case: " + item.getItemId());
                 return true;
             case R.id.live_help:
