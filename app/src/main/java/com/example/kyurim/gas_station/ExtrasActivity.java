@@ -33,14 +33,26 @@ public class ExtrasActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_create_order_spinner:
-                Log.i(TAG, "Option clicked - case: " + item.getItemId());
-                return true;
             case R.id.live_help:
-                Log.i(TAG, "Option clicked - case: " + item.getItemId());
+                Log.i(TAG, "LiveHelp Selected: " + item.getItemId());
+                return true;
+            case R.id.dropdown_extras:
+                Log.i(TAG, "Extra Selected: " + item.getItemId());
+                return true;
+            case R.id.dropdown_help_center:
+                Log.i(TAG, "Help Center Selected: " + item.getItemId());
+                return true;
+            case R.id.dropdown_feedback:
+                Log.i(TAG, "Feedback Selected: " + item.getItemId());
+                return true;
+            case R.id.dropdown_report_bug:
+                Log.i(TAG, "Report Bug Selected: " + item.getItemId());
+                return true;
+            case R.id.dropdown_legal:
+                Log.i(TAG, "Legal Selected: " + item.getItemId());
                 return true;
             default:
-                Log.i(TAG, "Option clicked - case: " + item.getItemId());
+                Log.i(TAG, "Default Selected: " + item.getItemId());
                 return super.onOptionsItemSelected(item);
         }
     }
