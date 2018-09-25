@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">gas-station</string>
+    <string name="tool_bar_extras">Extras</string>
 </resources>
