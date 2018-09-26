@@ -1,15 +1,19 @@
 package com.example.kyurim.gas_station;
 
-import android.support.v7.widget.Toolbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class ExtrasActivity extends AppCompatActivity {
 
-    final static String TAG = "---ExtraActivity";
+    static final String TAG = "---ExtraActivity";
+    public static final String EXTRA_EXTRA_DETAIL_ID = "extraid";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +22,48 @@ public class ExtrasActivity extends AppCompatActivity {
         // ToolBar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        CardView vehicleCareCardView = (CardView) findViewById(R.id.vehicle_care_card_view);
+        vehicleCareCardView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i(TAG, "vehicle care");
+            }
+        });
+
+        CardView findGasCardView = (CardView) findViewById(R.id.find_gas_card_view);
+        findGasCardView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i(TAG, "find gas");
+            }
+        });
+
+        CardView buyCarCardView = (CardView) findViewById(R.id.buy_car_card_view);
+        buyCarCardView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i(TAG, "buy car");
+            }
+        });
+
+        CardView destinationCardView = (CardView) findViewById(R.id.destination_card_view);
+        destinationCardView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i(TAG, "destination");
+            }
+        });
+
+        CardView findRideCardView = (CardView) findViewById(R.id.find_ride_card_view);
+        findRideCardView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i(TAG, "find ride");
+            }
+        });
+
+        CardView findParkingCardView = (CardView) findViewById(R.id.find_parking_card_view);
+        findParkingCardView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i(TAG, "find parking");
+            }
+        });
 
     }
 

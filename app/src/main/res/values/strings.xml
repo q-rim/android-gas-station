@@ -8,7 +8,15 @@
     <string name="drop_feedback">Feedback</string>
     <string name="drop_bug">Report Bug</string>
     <string name="drop_legal">Legal</string>
-
+    <string name="vehicle_care">VEHICLE CARE</string>
+    <string name="vehicle_care_des">Access your car\'s service history, recall alerts, service reminders and more! \nPowered by CarFax</string>
+    <string name="app_exc">App Exclusive</string>
+    <string name="premium_extras">Premium Extras</string>
+    <string name="find_gas">Find Gas</string>
+    <string name="buy_car">Car Buying Service</string>
+    <string name="destination">Destination</string>
+    <string name="find_ride">Find a Ride</string>
+    <string name="find_parking">Find Parking</string>
 
     <string-array name="spinner_list_item_array">
         <item>Extras</item>

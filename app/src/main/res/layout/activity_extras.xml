@@ -5,18 +5,275 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExtrasActivity">
+    android:orientation="vertical"
+    tools:context="com.example.kyurim.gas_station.ExtrasActivity">
+
     <include
         layout="@layout/toolbar_main"
         android:id="@+id/toolbar" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="4dp"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/app_exc"
+                android:textSize="16dip"
+                android:textStyle="bold"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingLeft="12dp" />
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/vehicle_care_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                card_view:cardElevation="1dp"
+                card_view:cardCornerRadius="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/vehicle_care"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="@string/vehicle_care"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:paddingTop="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="@string/vehicle_care_des"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:paddingBottom="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/premium_extras"
+                android:textSize="16dip"
+                android:textStyle="bold"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingLeft="12dp" />
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/find_gas_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                card_view:cardElevation="1dp"
+                card_view:cardCornerRadius="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/find_gas"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="12dp" />
+
+                    <TextView
+                        android:text="@string/find_gas"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:paddingTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/buy_car_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                card_view:cardElevation="1dp"
+                card_view:cardCornerRadius="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/buy_car"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="12dp" />
+
+                    <TextView
+                        android:text="@string/buy_car"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:paddingTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/destination_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                card_view:cardElevation="1dp"
+                card_view:cardCornerRadius="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/destination"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="12dp" />
+
+                    <TextView
+                        android:text="@string/destination"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:paddingTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/find_ride_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                card_view:cardElevation="1dp"
+                card_view:cardCornerRadius="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/find_ride"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="12dp" />
+
+                    <TextView
+                        android:text="@string/find_ride"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:paddingTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/find_parking_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                card_view:cardElevation="1dp"
+                card_view:cardCornerRadius="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/find_parking"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="12dp" />
+
+                    <TextView
+                        android:text="@string/find_parking"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:paddingTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
 
 </LinearLayout>
