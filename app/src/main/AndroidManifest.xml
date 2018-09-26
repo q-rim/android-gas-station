@@ -18,7 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FindGasActivity"></activity>
+
+        <activity
+            android:name=".FindGasActivity"
+            android:label="@string/find_gas">
+        </activity>
     </application>
 
 </manifest>

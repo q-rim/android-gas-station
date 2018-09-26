@@ -7,6 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".FindGasActivity">
 
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar" />
+
     <TextView
         android:text="@string/find_gas"
         android:layout_marginLeft="4dp"
