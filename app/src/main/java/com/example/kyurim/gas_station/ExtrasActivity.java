@@ -1,5 +1,6 @@
 package com.example.kyurim.gas_station;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -13,6 +14,7 @@ public class ExtrasActivity extends AppCompatActivity {
 
     static final String TAG = "---ExtraActivity";
     public static final String EXTRA_EXTRA_DETAIL_ID = "extraid";
+    public static final String KEY1 = "ExtrasActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,9 @@ public class ExtrasActivity extends AppCompatActivity {
         findGasCardView.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.i(TAG, "find gas");
+                Intent intent = new Intent(ExtrasActivity.this, FindGasActivity.class);
+                intent.putExtra(KEY1, "TEST");
+                startActivity(intent);
             }
         });
 
@@ -64,7 +69,6 @@ public class ExtrasActivity extends AppCompatActivity {
                 Log.i(TAG, "find parking");
             }
         });
-
     }
 
     // Menu
