@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FindGasActivity">
@@ -11,12 +12,21 @@
         layout="@layout/toolbar_main"
         android:id="@+id/toolbar" />
 
-    <TextView
-        android:text="@string/find_gas"
-        android:layout_marginLeft="4dp"
-        android:layout_marginBottom="4dp"
-        android:paddingTop="12dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
+    <TextView
+        android:id="@+id/url_in_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/url_out_text_view"
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
 </LinearLayout>
