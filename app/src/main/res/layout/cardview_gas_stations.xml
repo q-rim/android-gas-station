@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:id="@+id/gas_station_cardview"
+android:layout_width="match_parent"
+android:layout_height="90dp"
+android:layout_margin="1dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/price_cv_textview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="{ price }"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp">
+
+        <TextView
+            android:id="@+id/gas_station_cv_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="{ station }" />
+
+        <TextView
+            android:id="@+id/address_cv_textview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="{ address }" />
+
+        <TextView
+            android:id="@+id/dist_cv_textview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textSize="12sp"
+            android:text="{ dist }" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>

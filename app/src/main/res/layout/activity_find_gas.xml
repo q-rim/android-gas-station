@@ -19,14 +19,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="4dp" />
 
-    <ScrollView
+    <FrameLayout
+        android:id="@+id/gas_statino_list_fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent" />
 
-        <TextView
-            android:id="@+id/url_out_text_view"
-            android:layout_margin="4dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </ScrollView>
 </LinearLayout>

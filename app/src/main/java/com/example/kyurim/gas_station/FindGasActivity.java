@@ -31,10 +31,14 @@ public class FindGasActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mUrlInTextView = (TextView) findViewById(R.id.url_in_text_view);
-        mUrlOutTextView = (TextView) findViewById(R.id.url_out_text_view);
+        // Inflate the BookListFragment
+        getFragmentManager()
+                .beginTransaction()
+                .replace(R.id.gas_statino_list_fragment_container,
+                        new GasStationListFragment())
+                .commit();
 
-        makeSearchQuery();
+//        makeSearchQuery();
     }
 
     private void makeSearchQuery() {
